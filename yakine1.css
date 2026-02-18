@@ -1,134 +1,81 @@
-/* Reset some default styles */
-* {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* General styling */
-body {
-    font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
 }
 
-/* Header Styling */
 header {
-    background-color: #005f73;
+    background-color: #2c3e50;
     color: white;
-    padding: 40px 0;
+    padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+    margin: 0;
 }
 
 header p {
-    font-size: 1.2rem;
-    font-weight: 300;
+    margin-top: 10px;
 }
 
-/* Navigation Styling */
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
-    margin-top: 20px;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
+    font-weight: bold;
 }
 
-nav ul li a:hover {
-    color: #ffb703;
+section {
+    padding: 40px 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Section Styling */
-.section {
-    padding: 50px 20px;
-}
-
-.section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+section h2 {
+    font-size: 2em;
     color: #333;
-    text-align: center;
 }
 
-.section p {
-    font-size: 1.1rem;
-    text-align: center;
-    color: #666;
+.project-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-ul li {
-    margin: 10px 0;
-    text-align: center;
-}
-
-ul li a {
-    color: #005f73;
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-ul li a:hover {
-    color: #ffb703;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #333;
+.project-btn {
+    padding: 10px 20px;
+    background-color: #3498db;
     color: white;
-    padding: 20px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.project-btn:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
     text-align: center;
-    font-size: 1rem;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-
-    header h1 {
-        font-size: 2.5rem;
-    }
-
-    nav ul li {
-        margin-right: 10px;
-    }
-
-    nav ul li a {
-        font-size: 1rem;
-    }
-
-    .section h2 {
-        font-size: 1.8rem;
-    }
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
